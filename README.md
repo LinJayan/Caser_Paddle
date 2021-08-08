@@ -20,7 +20,7 @@ Top-N顺序推荐模型将每个用户作为一个序列
 ## **项目结构**
 #### caser_paddle
 #### |__ datasets
-#### $~~~~$|__ ml1m
+####     |__ ml1m
 #### $~~~~$|__ gowalla
 #### |__model
 #### $~~~~$|__ caser.py
@@ -60,5 +60,5 @@ Top-N顺序推荐模型将每个用户作为一个序列
 ##### **【说明】训练30个epoch,取训练测试过程中最高的记录**
 
 ### **参考**:
-#### 1[https://github.com/graytowne/caser_pytorch/](http://)
-#### 2[https://github.com/graytowne/rank_distill/tree/master/datasets/gowalla](http://)
+#### 1、[https://github.com/graytowne/caser_pytorch/](http://)
+#### 2、[https://github.com/graytowne/rank_distill/tree/master/datasets/gowalla](http://)
