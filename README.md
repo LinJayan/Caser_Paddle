@@ -58,9 +58,15 @@ Top-N顺序推荐模型将每个用户作为一个序列
 ## **复现结论**
 #### **论文复现MAP指标要求：** 1、MovieLens MAP=0.1507 2、Gowalla MAP=0.0928
 #### **本次论文复现精度如下：**
-#### **1.MovieLens MAP=0.1752**
+#### **1.MovieLens MAP=0.1727**
 #### **2.Gowalla MAP=0.0947**
-##### **【说明】训练30个epoch,取训练测试过程中最高的记录**
+##### **【说明】训练30个epoch,取训练中最后一次模型做预测**
+
+### **MovieLens-1M上的预测结果**
+![](https://ai-studio-static-online.cdn.bcebos.com/1d8b0e01d4d14ecfbe7db87201421d5ad8c5eb092acf4ba2b892015eccc3013c)
+
+### **Gowalla上的预测结果**
+![](https://ai-studio-static-online.cdn.bcebos.com/ec59507ffb834957b912fdc81eb86ce2fb8c2d1e9aa94f4b8734dbbc1d37f7e0)
 
 ### **致谢**:
 #### 1、感谢百度官方提供的平台机会和算力支持！
