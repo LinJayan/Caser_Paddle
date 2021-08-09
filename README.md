@@ -62,6 +62,7 @@ Top-N顺序推荐模型将每个用户作为一个序列
 #### **2.Gowalla MAP=0.0947**
 ##### **【说明】训练30个epoch,取训练测试过程中最高的记录**
 
-### **参考**:
-#### 1、[https://github.com/graytowne/caser_pytorch/](http://)
-#### 2、[https://github.com/graytowne/rank_distill/tree/master/datasets/gowalla](http://)
+### **致谢**:
+#### 1、感谢百度官方提供的平台机会和算力支持！
+#### 2、[https://github.com/graytowne/caser_pytorch/](http://)
+#### 3、[https://github.com/graytowne/rank_distill/tree/master/datasets/gowalla](http://)
