@@ -48,12 +48,24 @@ Top-N顺序推荐模型将每个用户作为一个序列
 ##### [--d] MovieLens-1m 中 d=50;Gowalla 中 d=100
 ##### [--nv] MovieLens-1m 中 nv=4;Gowalla 中 nv=2
 ##### [--ac_conv] MovieLens-1m 中 ac_conv='relu';Gowalla 中 ac_conv='iden'
-##### [----ac_fc] MovieLens-1m 中 ac_fc='relu';Gowalla 中 ac_fc='sigm'
+##### [--ac_fc] MovieLens-1m 中 ac_fc='relu';Gowalla 中 ac_fc='sigm'
+
+### **数据来源**：
+#### MovieLens-1m数据集来源于[https://github.com/graytowne/caser_pytorch/](http://)
+#### Gowalla数据集来源于[https://github.com/graytowne/rank_distill/tree/master/datasets/gowalla](http://)
 
 ### **启动程序**：
 ### Usage:  python run.py --mode train --train_root Path --test_root Path
 #### **说明** 根据数据集使用不同的超参数设置进行实验,重要参数如上参数说明。
 
+### **详细训练、测试流程**：
+### **MovieLens-1m数据集上训练、测试**：
+#### **训练** python run.py --mode train --train_root ./datasets/ml1m/test/train.txt  --test_root ./datasets/ml1m/test/test.txt --d 50 --nv 4 --ac_conv iden --ac_fc relu
+#### **测试** python run.py --mode test --train_root ./datasets/ml1m/test/train.txt  --test_root ./datasets/ml1m/test/test.txt --d 50 --nv 4 --ac_conv iden --ac_fc relu
+
+### **Gowalla数据集上训练、测试**：
+#### **训练** python run.py --mode train --train_root ./datasets/gowalla/test/train.txt  --test_root ./datasets/gowalla/test/test.txt --d 100 --nv 2 --ac_conv iden --ac_fc sigm
+#### **测试** python run.py --mode test --train_root ./datasets/gowalla/test/train.txt  --test_root ./datasets/gowalla/test/test.txt --d 100 --nv 2 --ac_conv iden --ac_fc sigm
 
 ## **复现结论**
 #### **论文复现MAP指标要求：** 1、MovieLens MAP=0.1507 2、Gowalla MAP=0.0928
