@@ -51,7 +51,7 @@ Top-N顺序推荐模型将每个用户作为一个序列
 ##### [--ac_fc] MovieLens-1m 中 ac_fc='relu';Gowalla 中 ac_fc='sigm'
 
 ### **数据来源**：
-#### MovieLens-1m数据集来源于[https://github.com/graytowne/caser_pytorch/](http://)
+#### MovieLens-1m数据集来源于[https://github.com/graytowne/caser_pytorch/tree/master/datasets/ml1m](http://)
 #### Gowalla数据集来源于[https://github.com/graytowne/rank_distill/tree/master/datasets/gowalla](http://)
 
 ### **启动程序**：
@@ -83,4 +83,4 @@ Top-N顺序推荐模型将每个用户作为一个序列
 ### **致谢**:
 #### 1、感谢百度官方提供的平台机会和算力支持！
 #### 2、[https://github.com/graytowne/caser_pytorch/](http://)
-#### 3、[https://github.com/graytowne/rank_distill/tree/master/datasets/gowalla](http://)
+#### 3、[https://github.com/graytowne/rank_distill/](http://)
